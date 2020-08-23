@@ -25,9 +25,9 @@ Here are the steps I took and this is based on the tutorial but I did it all in 
 * Ejected the SD card again and then inserted it into the Pi. 
 * Connected power, Ethernet, SATA adapter, and the SSD. 
 * Once I did that, I ssh into the Pi once I was given an IP address. You can use Angry IP scanner to find your Pi. If it doesn't appear, power off and then power on again. If you use Windows, make sure to download PUTTY in order to ssh into your Pi.
-* then run the following commands: `sudo apt update` and `sudo apt upgrade -y`. Once that's done you can run this command `sudo rm -f /etc/systemd/network/99-default.link`. 
+* then run the following commands: `sudo apt update` and `sudo apt upgrade -y`. I added the `setup_upgrade.sh` file to make the process more seamless. All you need to do is make sure the file is executable by running `chmod + x setup_upgrade.sh` and then run it with `bash setup_upgrade.sh`. Once that's done you can run this command `sudo rm -f /etc/systemd/network/99-default.link`. 
 * Type `sudo reboot` and the board should reboot. I did have to re-log in so make sure to do that. 
 * Then I typed the following command: `wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash`. Took me about 10 minutes to install OMV but again it will depend on your network.
 * The board rebooted and then I used the IP address assigned and logged into the GUI on a browser. So by default admin is the username and openmediavault is the password. Please change the password to avoid any issues. I followed along the tutorial that I provided from Explaining computers and it worked. 
 
-I have attached the image of my NAS to this repo so you can see the final results. 
+
