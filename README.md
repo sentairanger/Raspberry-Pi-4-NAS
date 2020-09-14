@@ -30,4 +30,8 @@ Here are the steps I took and this is based on the tutorial but I did it all in 
 * Then I typed the following command: `wget -O -https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash`. Took me about 10 minutes to install OMV but again it will depend on your network.
 * The board rebooted and then I used the IP address assigned and logged into the GUI on a browser. So by default admin is the username and openmediavault is the password. Please change the password to avoid any issues. I followed along the tutorial that I provided from Explaining computers and it worked. 
 
+## Final Result
 
+Here's an image of my NAS.
+
+![Raspberry Pi 4 NAS](https://github.com/sentairanger/Raspberry-Pi-4-NAS/blob/master/IMG_20200822_172315525.jpg)
